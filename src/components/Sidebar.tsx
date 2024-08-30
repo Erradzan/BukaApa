@@ -16,7 +16,7 @@ const Sidebar: React.FC = () => {
   };
 
   const playSound = () => {
-    const audio = new Audio(`${process.env.PUBLIC_URL}/sound effect.mp3`);
+    const audio = new Audio(`${process.env.PUBLIC_URL}/sound-effect.mp3`);
     audio.play();
   };
 
