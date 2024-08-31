@@ -83,7 +83,7 @@ const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const storedCart = JSON.parse(localStorage.getItem('cartItems') || '[]');
     if (Array.isArray(storedCart)) {
       storedCart.forEach((item: CartItem) => {
-        if (item && item.id) { // Ensure item is valid
+        if (item && item.id) {
           dispatch({ type: 'ADD_ITEM', payload: item });
         }
       });
